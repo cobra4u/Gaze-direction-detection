@@ -16,7 +16,7 @@ Ablation experiments and fairness evaluation
 
 The system achieves a final champion model with ~13.2° MAE, improving significantly over the raw baseline (21.9° MAE) on the ETH-XGaze dataset.
 
-🔥 Key Features
+Key Features:
 
 Complete evaluation for ETH-XGaze: pose binning, histograms, CDF curves, MAE tables.
 
@@ -36,7 +36,7 @@ Automated figure & table generation for research/thesis writing.
 
 Reproducible results, including raw baseline and calibrated champion outputs.
 
-📁 Repository Structure
+Repository Structure
 code/
   gazemain/
     make_figs_ch5_part*.py
@@ -62,7 +62,7 @@ models/
   gaze/gaze_best.pth
   insightface/buffalo_l/*.onnx   # detection, landmarks, gender/age
 
-⚙️ Core Pipeline
+Core Pipeline
 
 Face detection & landmarking (InsightFace ONNX)
 
@@ -84,22 +84,22 @@ Champion model selection
 
 Visualization: F1–F13 & T5.1–T5.7
 
-🏗️ Environment Setup
+Environment Setup
 source /users/project1/pt01281/miniconda3/etc/profile.d/conda.sh
 conda activate /users/project1/pt01281/conda_envs/gaze_train
 
-📊 Results (ETH-XGaze)
+Results (ETH-XGaze):
 Model Stage	Avg MAE (deg)
 Raw Baseline	21.92°
 After Demo Offsets	~21° (subgroup-corrected)
 After Residual Grid	~15°
 Final Champion	≈13.2°
-🧪 Demo for Personal Images
+Demo for Personal Images
 python demo/run_folder_demo_v3.py \
     --input_dir my_faces/ \
     --output_dir my_faces/results/
 
-📝 License & Citation
+License & Citation:
 
 This repository is part of a university research project.
 Citations for ETH-XGaze and InsightFace should be included.
